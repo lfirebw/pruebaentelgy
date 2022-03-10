@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entelgy - Reto Frontend</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;600&display=swap" rel="stylesheet">
+    <!-- STYLES -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/grid.css">
+    <style>
+
+    </style>
+    <!--SCRIPTS-->
+    <script src="components/modalComponent.js"></script>
+    <script src="components/GridCountry.js"></script>
+    <script src="components/CardCountry.js"></script>
+    
+</head>
+<body>
+    <!--TOP-->
+    <!--HEADER-->
+    <header id="home">
+        <div class="top-header">
+            <!--RED SOCIAL-->
+        </div>
+        <nav class="navbar container">
+            <!-- LOGO -->
+            <div class="logo">
+                <img src="https://www.entelgy.com/images/logo/Entelgy-logo-home.png">
+            </div>
+            <!-- <input type="checkbox" id="checkbox_toggle" />
+            <label for="checkbox_toggle" class="hamburger">&#9776;</label> -->
+            <!-- NAVIGATION MENU -->
+            <div class="menu">
+                <li><a href="#home">Bienvenida</a></li>
+                <li><a href="#country">Países</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </div>
+        </nav>
+    </header>
+    <!--CONTENT-->
+    <!--First content-->
+    <section style="margin-bottom: 3em;">
+        <div class="container">
+            <div class="empty-space b3"></div>
+            <div class="flexbox-row">
+                <div class="column-6">
+                    <div class="empty-space b3"></div>
+                    <h1 class="font-xxlarge">Bienvenido a la prueba <br/> tecnica Frontend</h1>
+                    <h5>by: Emmy Seco</h5>
+                    <div class="empty-space b2"></div>
+                    <div class="font-larger">
+                        Listar 12 países mas importantes y reflejar la población actual.
+                    </div>
+                    <div class="empty-space b3"></div>
+                    <a href="#country" class="btn btn-primary">Ver prueba</a>
+                </div>
+                <div class="column-6">
+                    <img class="img-fluid" src="img/world.svg" alt="" srcset="img/world.png">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--PRINCIPAL Content-->
+    <section id="country" class="container" style="margin-bottom: 2em;">
+        <hr class="hrdivider"/>
+        <h1 class="font-xxlarge txt-center">Países</h1>
+        <div class="empty-space b3"></div>
+        <main >
+            <grid-country apisrc="https://restcountries.com/v3.1/lang/spa" row="3" column="4"></grid-country>
+        </main>
+        <div class="empty-space b3"></div>
+    </section>
+    <!--CONTACT SECTION-->
+    <section id="contact" class="container">
+        <hr class="hrdivider"/>
+        <h1 class="font-xxlarge txt-center">Contacto</h1>
+        <div class="empty-space b3"></div>
+        <div class="card" style="padding:20px;">
+            <p class="font-xlarge"><strong>Email:</strong> <span class="font-large"><a href="mailto:emmyseco@gmail.com">emmyseco@gmail.com</a></span></p>
+            <p class="font-xlarge"><strong>Whatsapp:</strong> <span class="font-large">927 214 825</span></p>
+        </div>
+        <div class="empty-space b3"></div>
+    </section>
+    <!--FOOTER-->
+    <footer>
+        <div class="empty-space b2"></div>
+        <div class="container">
+            <img src="https://www.entelgy.com/images/logo/Entelgy-logo-home.png">
+
+        </div>
+        <hr/>
+        <div class="empty-space b1"></div>
+        <div class="container flexbox-row">
+            <div class="column-4">
+                <h4>Datos de contacto</h4>
+                <div class="empty-space b1"></div>
+                <strong>Celular:</strong>  927 214 825 <br/>
+                <strong>Email:</strong> emmyseco@gmail.com
+                <p>
+                    Av. 28 de Julio, 314 <br/>
+                    Chiclayo (Lambayeque) - Perú
+                </p>
+            </div>
+            <div class="column-4">
+                <h4>Recursos</h4>
+                <div class="empty-space b1"></div>
+                <ul class="navmenu">
+                    <li><a href="#home">Inicio</a></li>
+                    <li><a href="#country">Países</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="column-4">
+                <figure class="txt-center">
+                    <img style="width: 100px;" class="img-fluid" src="img/world.svg" alt="" srcset="img/world.png">
+
+                </figure>
+                <p class="font-small">"El mundo es un buen lugar, valdría la pena defenderlo."</p>
+                <p style="text-align: end;">- ERNEST HEMINGWAY</p>
+            </div>
+        </div>
+        <div class="empty-space b1"></div>
+        <hr/>
+        <div class="empty-space b3"></div>
+        <!--BOTTOM-->
+        <div class="footer-bottom">
+            <p class="txt-center">Creado por Emmy Seco 10/03/2022 - emmyseco@gmail.com</p>
+        </div>
+    </footer>
+</body>
+</html>
